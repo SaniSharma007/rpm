@@ -1,0 +1,112 @@
+/* Reset some default styles for better consistency */
+html, body, h1, h3, p, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Set a background color for the body */
+body {
+    font-family: "Roboto", sans-serif;
+    background: #89C15E;
+    min-height: 100vh;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the container for the content */
+.container {
+    position: relative;
+}
+
+/* Style the image container */
+.img-container {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Style the "Play Again" button */
+.play-again {
+    background: #fff;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 0.6rem;
+    color: var(--dark-text);
+    padding: 0.6rem 3.5rem;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    text-decoration: none; /* Remove underlines */
+}
+
+/* Style the headings */
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 91px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 9.1px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4.1px;
+    margin-top: 0;
+}
+
+/* Style the "Rules" button */
+.rules-btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: none;
+    outline: none;
+    border: 2px solid var(--outline);
+    border-radius: 0.6rem;
+    color: var(--light-text);
+    padding: 0.6rem 2.5rem;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+/* Hide the "Play Again" button initially */
+.results__winner {
+    display: none;
+}
+
+/* Add styles for smaller screens using media queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 64px;
+        letter-spacing: 6.4px;
+    }
+
+    h3 {
+        font-size: 28px;
+        letter-spacing: 2.8px;
+    }
+}
